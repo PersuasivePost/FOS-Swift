@@ -1,4 +1,5 @@
 // functions and greater versions here
+// guards and calculated variables
 
 import Foundation
 
