@@ -25,7 +25,7 @@ func getName() -> String {
 
 //
 
-showFirstScreen()
+//showFirstScreen()
 
 func showFirstScreen() {
     var userDidCompleteOnBoarding = false
@@ -82,7 +82,7 @@ func doSomethingWithGuard()  {
     //return true
 }
 
-doSomethingWithGuard()
+//doSomethingWithGuard()
 
 
 func doSomethingWithGuard2()  {
@@ -99,4 +99,24 @@ func doSomethingWithGuard2()  {
     }
 }
 
-doSomethingWithGuard2()
+//doSomethingWithGuard2()
+
+// Calculated variables
+// are good when you dont need to pass data into the function
+let num1 = 5
+let num2 = 8
+
+func calculateNumbers() -> Int { // this
+    return num1 + num2
+}
+
+func calculateNumbers2(value1: Int, value2: Int) -> Int {
+    return value1 + value2
+}
+
+let result1 = calculateNumbers()
+let result2 = calculateNumbers2(value1: num1, value2: num2)
+
+var calculatedNumber: Int { // and this will work same
+    return num1 + num2
+}
